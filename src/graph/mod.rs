@@ -48,7 +48,7 @@ pub struct Graph {
     /// Maps an edge id to the next edge in the same adjacency list.
     next: Vec<Option<usize>>,
     /// Maps an edge id to the vertex that it points to.
-    endp: Vec<usize>,
+    pub endp: Vec<usize>,
 }
 
 impl Graph {
